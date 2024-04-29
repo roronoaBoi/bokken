@@ -3,6 +3,7 @@
 </p>
 
 # Ro's Sparring Grounds
+This is Ro's repository where projects big and small can be stored.
 
 ## To Do
 - [x] Initial testing
