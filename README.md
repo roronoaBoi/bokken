@@ -10,7 +10,8 @@
 - [ ] Add 10 Usecases
 
 ### Use Cases
-| Script      | Description | Developed     |
-| :---        |    :----:   |    :----:     |
-| insLocker   | Locks inspections upon completion       |       [ ]     |
-| actioner   | Creates actions when inspection completed        | [ ]      |
+| Script      | Description                                       | Developed     |
+| :---        |    :----:                                         |    :----:     |
+| insLocker   | Locks inspections upon completion                 |       🔴      |
+| actioner    | Creates actions when inspection completed         |       🔴      |
+| getAuthor   | Returns author name of inspection (initial test)  |       🟢      |
