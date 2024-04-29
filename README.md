@@ -1,5 +1,5 @@
 <p align="center">
-<img src="roBin/bokken.png" height="150">
+<img src="roBin/bokken.png" height="300">
 </p>
 
 # Ro's Sparring Grounds
