@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/mermaid-js/mermaid/develop/docs/public/favicon.svg" height="150">
+<img src="roBin/bokken.png" height="150">
 </p>
 
 # Ro's Sparring Grounds
