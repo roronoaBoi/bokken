@@ -16,3 +16,4 @@ This is Ro's repository where projects big and small can be stored.
 | insLocker   | Locks inspections upon completion                 |       🔴      |
 | actioner    | Creates actions when inspection completed         |       🔴      |
 | getAuthor   | Returns author name of inspection (initial test)  |       🟢      |
+| bulkSetSite | Updates inspection site in bulk                   |       🟡      |
