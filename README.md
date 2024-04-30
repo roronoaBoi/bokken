@@ -13,6 +13,6 @@ This is Ro's repository where projects big and small can be stored.
 ### Use Cases
 | Script          | Description                                       | Status        |
 | :---            |    :----:                                         |    :----:     |
-| lockInspection  | Locks inspections upon completion                 |       🔴      |
+| lockInspection  | Locks inspections upon completion                 |       🟡      |
 | bulkSetSite     | Updates inspection site in bulk                   |       🟡      |
 | deactivateUsers | Remove users based on date arg                    |       🔴      | 
