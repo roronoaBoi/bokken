@@ -7,14 +7,12 @@ This is Ro's repository where projects big and small can be stored.
 
 ## To Do
 - [x] Initial testing
-- [ ] Basic Setup
+- [X] Basic Setup
 - [ ] Add 10 Usecases
 
 ### Use Cases
-| Script          | Description                                       | Developed     |
+| Script          | Description                                       | Status        |
 | :---            |    :----:                                         |    :----:     |
-| insLocker       | Locks inspections upon completion                 |       🔴      |
-| actioner        | Creates actions when inspection completed         |       🔴      |
-| getAuthor       | Returns author name of inspection (initial test)  |       🟢      |
+| lockInspection  | Locks inspections upon completion                 |       🔴      |
 | bulkSetSite     | Updates inspection site in bulk                   |       🟡      |
 | deactivateUsers | Remove users based on date arg                    |       🔴      | 
