@@ -17,3 +17,4 @@ This is Ro's repository where projects big and small can be stored.
 | actioner    | Creates actions when inspection completed         |       🔴      |
 | getAuthor   | Returns author name of inspection (initial test)  |       🟢      |
 | bulkSetSite | Updates inspection site in bulk                   |       🟡      |
+| deactivateUsers | Remove users based on date arg                |       🔴      | 
