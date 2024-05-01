@@ -14,7 +14,7 @@ This is Ro's repository where projects big and small can be stored.
 | Script          | Description                                       | Status        |
 | :---            |    :----:                                         |    :----:     |
 | lockInspection  | Locks inspections upon completion                 |       🟡      |
-| bulkSetSite     | Updates inspection site in bulk                   |       🟡      |
+| bulkSetSite     | Updates inspection site in bulk                   |       🟢      |
 | deactivateUsers | Remove users based on date arg                    |       🔴      | 
 
 ## Git Workflows
