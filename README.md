@@ -18,6 +18,7 @@ This is Ro's repository where projects big and small can be stored.
 | deactivateUsers | Remove users based on date arg                    |       🔴      | 
 
 ## Git Workflows
+<div class="mermaid">
 %%{
   init: {
     'theme': 'base',
@@ -51,3 +52,4 @@ E(Push staged to branch:
 'git push origin #branch_name#')
 
 end
+</div>
