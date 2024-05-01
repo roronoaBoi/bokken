@@ -19,26 +19,7 @@ This is Ro's repository where projects big and small can be stored.
 
 ## Git Workflows
 <div class="mermaid">
-%%{
-  init: {
-    'theme': 'base',
-    'themeVariables': {
-      'primaryColor': '#6558ff',
-      'primaryTextColor': '#fff',
-      'primaryBorderColor': '#6558ff',
-      'lineColor': '#cad5e2',
-      'secondaryColor': '#343232',
-      'tertiaryColor': '#fff'
-    }
-  }
-}%%
-flowchart LR 
-subgraph Basic Git
-direction TB
-%% [(Database)]
-%% (BubbleBox)
-%% [Normal Box]
-%% ([RoundedBox])
+graph TB
 A(Branch created:
 'git branch #name#)-->
 B(Make changes to
@@ -49,7 +30,5 @@ files added -->
 D(Stage push:
 'git commit')-->
 E(Push staged to branch:
-'git push origin #branch_name#')
-
-end
+'git push origin #branch_name#');
 </div>
