@@ -19,7 +19,7 @@ This is Ro's repository where projects big and small can be stored.
 
 ## Git Workflows
 ```mermaid
-graph LR
+graph TB
 A(Branch created:
 'git branch #name#)-->
 B(Make changes to
