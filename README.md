@@ -1,5 +1,5 @@
 <p align="center">
-<img src="roBin/image.png" height="300">
+<img src="roBin/image.png" height="300" width="1000">
 </p>
 
 # Ro's Sparring Grounds
