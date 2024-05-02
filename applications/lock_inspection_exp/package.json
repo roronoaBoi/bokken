@@ -1,0 +1,18 @@
+{
+  "name": "lock_inspection_exp",
+  "version": "1.0.0",
+  "description": "express listens and locks completed inspections",
+  "main": "lockInspection.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "bokken"
+  },
+  "author": "roronoaBoi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
