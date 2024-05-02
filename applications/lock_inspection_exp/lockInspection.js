@@ -3,15 +3,14 @@ const app = express()
 const port = process.argv[2]
 const endPoint = process.argv[3]
 const token = process.argv[4]
+//need winston to log locks
+
 
 app.use(express.json());
 
 app.post('/' + endPoint, (req, res) => {
-
+//use access transfer endpoint to remove access from original owner and place record with admin
     async function process(data){
-        //instead of actionURL stuff, use the endpoint that removes inspection access from
-        //the completer... this shouldn't override permissions in SC, so it wont lock out
-        //an admin I think... reassign to an admin and make sure template rules harmonize
         const auditId = data.data.audit.audit_id
         const userId = data.data.audit.audit_data.authorship.author_id
         const removeAccessUrl = `https://api.safetyculture.io/inspections/v1/inspections/${auditId}/user/${userId}/access?new_owner_id=1d1afa78-7616-4734-ab5a-a5d6624f20f5`
