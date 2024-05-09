@@ -14,4 +14,4 @@ etc.
 ```
 
 Run the following command:
-`node <token> index.mjs`
+`node index.mjs <token>`
