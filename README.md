@@ -11,11 +11,12 @@ This is Ro's repository where projects big and small can be stored.
 - [ ] Add 10 Usecases
 
 ## Use Cases
-| Script          | Description                                       | Status        |
-| :---            |    :----:                                         |    :----:     |
-| lockInspection  | Locks inspections upon completion                 |       🟢      |
-| bulkSetSite     | Updates inspection site in bulk                   |       🟢      |
-| deactivateUsers | Remove users based on date arg                    |       🔴      | 
+| Script / App                  | Description                                       | Status        |
+| :---                          |    :----:                                         |    :----:     |
+| lock_inspection_express       | Locks inspections upon completion                 |       🟢      |
+| bulk_set_site                 | Updates inspection site in bulk                   |       🟢      |
+| deactivateUsers               | Remove users based on date arg                    |       🔴      |
+| bulk_set_owner                | Remove users based on date arg                    |       🟢      |
 
 ## Git Workflows
 ```mermaid
