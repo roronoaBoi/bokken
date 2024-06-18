@@ -1,5 +1,4 @@
-const records = [] 
-
+const records = []
 const token = process.argv[2]
 
 async function getSite(audit) {
