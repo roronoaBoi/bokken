@@ -8,8 +8,8 @@ token = config['scriptsettings']['token']
 
 records = []
 
-base_url = 'https://api.safetyculture.io/feed'
-url_append = '/inspections?archived=false&completed=true&web_report_link=private'
+base_url = 'https://api.safetyculture.io'
+url_append = '/feed/inspections?archived=false&completed=true'
 
 headers = {
     "accept": "application/json",
@@ -42,8 +42,20 @@ while next_page_url:
 
 #process non-archived
 for record in records:
-    print(f"archiveurl.com/{record}")
+    url = f'https://api.safetyculture.io/inspections/v1/inspections/{record}/archive'
+    response = requests.post(url, headers=headers)
+    
+    if response.status_code == 200:
+        print(f'Successfully archived record {record}')
+    else:
+        print(f'Failed to archive record {record}. Status code: {response.status_code}, Response: {response.text}')
 
 #process archived
 for record in records:
-    print(f"deleteurl.com/{record}")
+    url = f'https://api.safetyculture.io/inspections/v1/inspections/{record}'
+    response = requests.delete(url, headers=headers)
+    
+    if response.status_code == 200:
+        print(f'Successfully deleted record {record}')
+    else:
+        print(f'Failed to delete record {record}. Status code: {response.status_code}, Response: {response.text}')
