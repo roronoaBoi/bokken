@@ -7,7 +7,7 @@ This is Ro's holding repository where projects big and small can be stored.
 
 ## Git Workflows
 ```mermaid
-graph LR
+flowchart LR
 A(Branch created:
 'git branch #name#)-->
 B(Make changes to
@@ -16,7 +16,7 @@ C(Add files to commit:
 'git add .')-- Once all
 files added -->
 D(Stage push:
-'git commit -m "#msg#"';)-->
+'git commit -m 'msg'';)-->
 E(Push staged to branch:
 'git push origin #branch_name#');
 ```
