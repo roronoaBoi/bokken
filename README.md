@@ -20,3 +20,16 @@ D(Stage push:
 E(Push staged to branch:
 'git push origin #branch_name#');
 ```
+
+## Lint code!
+This repository utilizes ESList. To install the necessary dependencies, run the following command in the root where the repo was cloned:
+```bash
+npm i
+```
+
+Once installed, use `npx` to run the linter:
+```bash
+npx eslint
+```
+
+Ensure code is linted before submitting a PR!
