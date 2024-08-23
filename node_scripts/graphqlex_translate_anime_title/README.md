@@ -6,7 +6,7 @@ This script currently requires no setup, although - readline arguments may be ad
 
 ## Running the Script:
 Run the following command:
-`node index.js <Name of Anime>`
+`node index.js <Name_of_Anime>`
 
 It is important to note that this script uses `process.argv`. That being the case, be sure to use underscores or place your search entry in double quotes in the event that there are spaces in the title.
 
