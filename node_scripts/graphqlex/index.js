@@ -1,4 +1,3 @@
-
 const query = `
 query ($id: Int) {
   Media(id: $id, type: ANIME) {
@@ -12,11 +11,9 @@ query ($id: Int) {
 }
 `;
 
-
 const variables = {
     id: 15127
 };
-
 
 const url = 'https://graphql.anilist.co',
     options = {
@@ -31,7 +28,7 @@ const url = 'https://graphql.anilist.co',
         })
     };
 
-// Make the HTTP Api request
+// Make the Api request
 fetch(url, options).then(handleResponse)
                    .then(handleData)
                    .catch(handleError);
