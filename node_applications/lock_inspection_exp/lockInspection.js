@@ -3,8 +3,6 @@ const app = express()
 const port = process.argv[2]
 const endPoint = process.argv[3]
 const token = process.argv[4]
-//need winston to log locks
-
 
 app.use(express.json());
 
@@ -30,7 +28,6 @@ app.post('/' + endPoint, (req, res) => {
             const inspectionId = data.inspection_id
             console.log(`${inspectionId} locked!`)
         })
-
     }
 
     process(req.body)
