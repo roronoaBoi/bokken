@@ -64,3 +64,4 @@ async function confirmDeletion() {
         console.log('No items were deleted.');
     }
 })();
+ 
