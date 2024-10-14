@@ -27,6 +27,10 @@ async function getInspections() {
     return inspections
 };
 
+//create other functions to build the lists of items that need to be deleted.
+
+//create async deletion functions that can be called against lists
+
 async function confirmDeletion() {
     const response = await inquirer.prompt([
         {
@@ -43,15 +47,19 @@ async function confirmDeletion() {
         console.log('Deletion cancelled.');
         return false;
     }
-}
+};
 
 (async () => {
     const delInspections = await getInspections();
     console.log('inspections queued for deletion: ' + delInspections.length)
     
+    //copy lines 53, 54 to call other async functions referenced in line 30.
+
+
     const userConfirmed = await confirmDeletion();
     if (userConfirmed) {
         console.log('deleting...')
+        //process deletion functions against lists from (ex:53 54)
     } else {
         console.log('No items were deleted.');
     }
