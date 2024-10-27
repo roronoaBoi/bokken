@@ -45,11 +45,12 @@ app.get('/:goobly/echo', function(req,res, next){ //9
 //     res.send(time)
 
 //9
-// const word = req.params.goobly
-// const pWord = word.replace(':','')
-// res.json({
-//     "echo": pWord
-// })
+const word = req.params.goobly
+const pWord = word.replace(':','')
+res.json({
+    "echo": pWord
+})
+next()
 
 //10
 
