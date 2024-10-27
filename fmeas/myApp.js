@@ -13,7 +13,8 @@ let app = express();
 
 // app.use('/public', express.static(path));
 
-app.get('/now', function(req,res, next){
+// app.get('/now', function(req,res, next){ //1-8
+app.get('/:goobly/echo', function(req,res, next){ //9
 //     // res.send(message);
 
 //     // res.json(absolutePath)
@@ -33,14 +34,26 @@ app.get('/now', function(req,res, next){
 // console.log(res) //extra
 // next()
 
-req.time = new Date().toString()
-next();
-},
-function(req,res) {
-    const time = {
-        "time": req.time
-    }
-    res.send(time)
+//you can always naviagte to the endpoint for 'lazy debugging' to see what is hanging up the app
+// req.time = new Date().toString()
+// next();
+// },
+// function(req,res) {
+//     const time = {
+//         "time": req.time
+//     }
+//     res.send(time)
+
+//9
+// const word = req.params.goobly
+// const pWord = word.replace(':','')
+// res.json({
+//     "echo": pWord
+// })
+
+//10
+
+
 });
 
 module.exports = app;
