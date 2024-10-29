@@ -1,15 +1,16 @@
 let express = require('express');
 require('dotenv').config()
+const bodyParser = require('body-parser')
 let app = express();
 
-app.get('/name', function(req,res){
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true })); //using a body parser to break down the json
 
-const firstName = req.query.first
-const lastName = req.query.last
-res.json({
-    "name":firstName + ' ' + lastName
+app.post('/name', function (req,res) {
+    const fullName = `${req.body.first} ${req.body.last}`
+    res.json({
+        name : fullName
+    })
 })
-
-});
 
 module.exports = app;
