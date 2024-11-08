@@ -3,7 +3,7 @@
 </p>
 
 # Ro's Sparring Grounds
-This is Ro's holding repository where projects big and small can be stored.
+This is Ro's holding repository for various scripts and examples for training.
 
 ## Git Workflows
 ```mermaid
