@@ -1,4 +1,3 @@
-//can i make a H or T game off the dome?
 const attempts = process.argv[2]
 
 function hOrT(max) {
@@ -17,4 +16,3 @@ for (let i = 0; i < attempts; i++) {
 }
 
 console.log(game)
-//yes i can
