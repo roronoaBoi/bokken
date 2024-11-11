@@ -13,14 +13,9 @@ d[function logs record]
 ```
 
 ## Cloud Env Considerations
-Express apps can be run serverlessly using AWS Lambda or Azure Functions.
+While express apps can be run serverlessly in cloud providers, this is often not practical. That said, plugins are available to leverage express apps directly in the cloud provider of choice.
 
-- AWS Lamba:
+- Example:
 ```bash
-npm install aws-serverless-express
-```
-
-- Azure Functions:
-```bash
-npm install express @azure/functions
+npm install serverless-express
 ```
