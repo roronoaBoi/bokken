@@ -1,6 +1,7 @@
 import inquirer from 'inquirer'
 const token = process.argv[2]
 
+//loop to get inspections
 async function getInspections() {
     const inspections = []
     const rootUrl = 'https://api.safetyculture.io'
@@ -31,6 +32,7 @@ async function getInspections() {
 
 //create async deletion functions that can be called against lists
 
+//leverage inquirer
 async function confirmDeletion() {
     const response = await inquirer.prompt([
         {
@@ -49,19 +51,6 @@ async function confirmDeletion() {
     }
 };
 
-(async () => {
-    const delInspections = await getInspections();
-    console.log('inspections queued for deletion: ' + delInspections.length)
-    
-    //copy lines 53, 54 to call other async functions referenced in line 30.
-
-
-    const userConfirmed = await confirmDeletion();
-    if (userConfirmed) {
-        console.log('deleting...')
-        //process deletion functions against lists from (ex:53 54)
-    } else {
-        console.log('No items were deleted.');
-    }
-})();
- 
+//for linter until i finish this...
+getInspections()
+confirmDeletion()
