@@ -51,4 +51,6 @@ async function confirmDeletion() {
     }
 };
 
-// final main() to run all functions
+//for linter until i finish this...
+getInspections()
+confirmDeletion()
