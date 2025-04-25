@@ -16,17 +16,14 @@ async function fetchUsers() {
         } else {
             const json = await response.json()
             users = users.concat(json.users)
-
             total = json.total
             skip += limit
-
             hasMore = skip < total
         }
-
         console.log('finished fetching...')
         return users
     }
-}
+};
 
 const userData = await fetchUsers()
 
@@ -34,4 +31,3 @@ const jsonFile = JSON.stringify(userData, null, 2)
 writeFileSync('jsonData.json',jsonFile,'utf-8');
 
 console.log('created JSON doc in local directory...')
-

@@ -10,7 +10,7 @@ const csvWriter = createObjectCsvWriter({
 });
 
 const entry = [
-    {msg: 'hello ro'}
+    {msg: 'hello something different'}
 ]
 
 async function main(){
